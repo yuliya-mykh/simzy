@@ -9,6 +9,9 @@ get_header();
 <div class="main">
             
             <div class="intro">
+            <span class="ring one"></span>
+            <span class="ring two"></span>
+            <span class="ring tree"></span>
                 <div class="wrapper intro_cont">
                     <div></div>
                     <div class="intro_text">
@@ -236,26 +239,15 @@ endif;
             </section>
 
             <div class="contact_form">
+            <span class="ring one"></span>
+            <span class="ring two"></span>
+            <span class="ring tree"></span>
                 <div class="wrapper">
                     <div class="contact_form_caption">For any enquiries, or just to say hello</div>
-                  <!--<?php echo do_shortcode('[contact-form-7 id="147" title="Contact Form"]'); ?> -->
+                  
                     <div class="form">
                         <div></div>
-                        <div class="contacts">
-                            <div class="email_form">
-                                <p class="email">Email</p>
-                                <div class="write_to_us">
-                                    <a href="mailto:hello@simyz.com"><p>hello@simyz.com</p><img src="<?php echo get_template_directory_uri(); ?>/img/courser_write_to_us.png" alt="write_to_us" class="button_write_to_us"></a>
-                                </div>
-                            </div>
-                            <div class="phone_form">
-                                <p class="phone">Phone</p>
-                                <div class="phone_to_us">
-                                    <a href="tel:+380990000000"><p>+38 099 000 00 00</p></a>
-                                </div>
-                            </div>
-
-                        </div>
+                       <div><?php echo do_shortcode('[contact-form-7 id="156" title="Contact-Form"]'); ?></div>
                     </div>
                 </div>
     </div>

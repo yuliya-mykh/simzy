@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +41,10 @@
                                 'walker'          => '',
 							] );
 							?>
+                            <div class="header_nav-close">
+                                <span class="header_nav-close-line"></span>
+                                <span class="header_nav-close-line"></span>
+                            </div>
                         </nav>
                         <div class="header_burger burger">
                             <span class="burger_line burger_line_first"></span>
