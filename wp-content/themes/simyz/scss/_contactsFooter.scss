@@ -1,0 +1,105 @@
+.contact_form_caption {
+    @include adaptiv-indent(50,32);
+}
+
+.form {
+
+    // .form_link
+
+    &_link a {
+    text-decoration: none;   
+    @include adaptiv-font(18, 16, 27);
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    display:inline-block;
+    padding-bottom: 40px;
+
+    span{
+        margin: 0 14px;
+        display: inline-block;
+        width: 120px;
+        border-bottom: 1px solid #fff ;
+    }
+    @media screen and (min-width: 1024px) {
+        &::after{
+            content: 'write to us';
+            position: absolute;
+            transform: rotate(25.85deg);
+            background-color: #DA1C1C;
+            text-transform: lowercase;
+            color: #fff;
+            padding: 24px 18px;
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            font-weight: 300;
+            @include adaptiv-font(18, 16, 20);
+
+                top: 25px;
+                left: 98%;
+                -webkit-transition: all 0.3s ease;;
+                -o-transition: all 0.3s ease;;
+                transition: all 0.3s ease;
+            }
+        &:hover {
+            color: $color_lightgray; 
+            font-weight: 900;
+            -webkit-transition: all 0.3s ease;;
+            -o-transition: all 0.3s ease;;
+            transition: all 0.3s ease;
+
+            }
+            &:hover span{
+                border-bottom: 2px solid $color_darkgrey ;
+                -webkit-transition: all 0.3s ease;;
+                -o-transition: all 0.3s ease;;
+                transition: all 0.3s ease;
+
+    }
+    }
+
+
+}
+.contacts {
+    
+    p {
+        @include adaptiv-font(18, 16, 27);
+
+        color: #666666;
+        margin-bottom: 21px;
+    }
+}
+.adress {
+
+    // .adress_blok
+
+    &_blok {
+        @include adaptiv-font(25, 16, 39);
+        
+        text-transform: uppercase;
+        display: inline-block;
+        border-bottom: 1.5px solid #2F2F2F;
+        margin-bottom: 105px;
+        
+    }
+}
+address, .phone {
+    margin-bottom: 20px;
+}
+.phone a{
+    text-decoration: none;
+    @include adaptiv-font(25, 16, 39);
+    color: #fff;
+}
+
+.map{
+    //max-width: 577px;
+    
+    
+}
+
+}

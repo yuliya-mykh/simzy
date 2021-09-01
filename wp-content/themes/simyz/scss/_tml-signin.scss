@@ -1,0 +1,236 @@
+.signin{
+.login-body {
+    padding-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width:767px) {
+        padding: 60px 0;
+        display: block;
+        .login-img{
+            display: none;
+        }
+    }
+
+
+.login-left {
+    width: 40%;
+    @media (max-width:767px) {
+        width: 100%; 
+    }
+    
+}
+
+.login_form {
+
+    max-width: 748px;
+    background: #ECEAEA;
+    width: 60%;
+    padding: 40px;
+    padding-bottom: 178px;
+    position: relative;
+    @media (max-width:767px) {
+        width: 100%; 
+        padding-bottom: 143px;
+        
+    }
+
+    .member{
+        position: absolute;
+        top: 26px;
+        right: 28px;
+        font-size: 18px;
+        line-height: 27px;
+        color: #414141;
+        @media (max-width:767px) {
+            top: auto;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -125px;
+            right: auto;
+        }
+
+        a{
+            text-decoration: none;
+            color: #9EB4D6;
+        }
+
+    }
+    .fogot{
+        position: absolute;
+        right: 48px;
+        bottom: 314px;
+        text-decoration: none;
+        color: #9EB4D6;
+        @media (max-width:767px){
+            bottom: 235px;  
+            left: 40px;
+        }
+        
+    }
+    
+
+    .logo_title{
+        padding-top: 63px;
+        
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 37px;
+        @media (max-width:767px){
+            display: none;
+        }
+        
+    }
+
+    input, textarea{
+        border: none;
+        outline: none;
+        background: none;
+        
+        color: #414141;
+        font-weight: 500;
+        max-width: 653px;
+        @include adaptiv-font(25, 18, 32);
+        line-height: 130%;
+        padding-bottom: 10px;
+        border-bottom: solid 1.6px #C4C4C4;
+        /*margin-bottom: 85px;*/
+        
+        
+
+        &:focus, &:active{
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: solid 1.6px #C4C4C4;
+
+        }
+
+        
+                
+    }
+
+
+
+
+    label{
+        font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    color: #C4C4C4;
+    padding-top: 37px;
+    @media (max-width:767px){
+        padding-top: 20px;
+    }
+
+    }
+.tml-submit-wrap{
+text-align: right;
+@media (max-width:767px){
+    text-align: center;
+    padding-top: 30px;
+}
+
+    }
+.tml-button{
+    visibility: hidden;
+    position: relative;
+    margin-top: 10px;
+
+    
+    &::after{
+        content: 'sign in';
+        top: 0;
+        width: 100px;
+        left: -50px;
+        
+        
+        visibility: visible;
+        position: absolute;
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #414141;
+        @media (max-width:767px){
+            left: -30px; 
+        
+        }
+
+        
+        
+    }
+}
+
+.tml-register-link{
+    position: relative;
+    & a{  
+        
+        
+        top: 0;
+        left: 120px;
+        text-decoration: none;
+        color:#9EB4D6;
+        position:absolute;
+        left: 70px;
+        top: 0;
+        visibility: hidden;
+        
+    }
+    & a::after{
+
+        
+        content: 'Sign up now';
+        top: 0;
+        left: 100px;
+        visibility: visible;
+    }
+}
+    .tml-register-link::after{
+        content: 'Not a member?';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .tml-login-link::after{
+        content: 'Already a member? ';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .tml-rememberme-wrap{
+        display: none;
+    }
+    .tml-login-link{
+        position: relative;
+        padding-top: 40px;
+    & a{  
+        
+        
+        top: 0;
+        left: 120px;
+        text-decoration: none;
+        color:#9EB4D6;
+        position:absolute;
+        left: 120px;
+        top: 0;
+        visibility: hidden;
+        
+    }
+    & a::after{
+
+        
+        content: 'Sign in now';
+        top: 0;
+        left: 100px;
+        visibility: visible;
+    } 
+    }
+
+    .indicator-hint{
+        display: none;
+    }  
+}
+
+}
+}

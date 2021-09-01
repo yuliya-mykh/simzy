@@ -1,0 +1,57 @@
+
+  .intro_plans{
+    background: #000;
+    overflow: hidden;
+    position: relative;
+  }
+
+.plans_caption{
+    @include adaptiv-font(80, 40, 99); 
+    color: #FFFFFF;
+    font-weight: 600;
+    position:relative;
+    z-index: 2;
+    margin-bottom: 60px;
+    span{
+      background: linear-gradient(180deg, #9453FB 0%, #BD93FF 54.69%, #384DBC 100%);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+}
+.plans_caption_link {
+        
+    @include adaptiv-font(18, 16, 27);
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    display:inline-block;
+    margin-bottom: 128px;
+    
+
+    span{
+        margin: 0 14px;
+        display: inline-block;
+        width: 120px;
+        border-bottom: 1px solid #fff ;
+    }
+    @media screen and (min-width: 1024px) {
+        
+        &:hover {
+            color: $color_lightgray; 
+            font-weight: 900;
+            -webkit-transition: all 0.3s ease;;
+            -o-transition: all 0.3s ease;;
+            transition: all 0.3s ease;
+         
+           }
+           &:hover span{
+             border-bottom: 2px solid $color_darkgrey ;
+             -webkit-transition: all 0.3s ease;;
+             -o-transition: all 0.3s ease;;
+             transition: all 0.3s ease;
+           }
+           
+    }
+}

@@ -1,0 +1,38 @@
+.loginIco {
+    @media (max-width:1023px){
+        position: absolute;
+        left: -40px;
+        top: 10px;
+    }
+    a{
+        text-decoration: none;
+        img{
+           
+        }
+        
+        
+    }
+
+.user {
+    img{
+        width: 25px;
+        height: 25px;
+        @media (min-width:1800px)
+        {
+        margin-left: 30px;
+        }
+        }
+}
+.notUser {
+    img{
+        width: 23px;
+        height: 23px;
+        @media (min-width:1800px)
+        { 
+        margin-left: 30px;
+        }
+        }
+}
+
+
+}

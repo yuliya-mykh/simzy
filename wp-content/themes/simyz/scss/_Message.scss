@@ -1,0 +1,82 @@
+.message {
+   background: #ECEAEA;
+   max-width: 932px;
+	
+
+		// .message__body
+
+		&__body {
+			padding: 150px 0;
+			
+				@media (max-width:767px) {
+			padding: 25px 0;
+
+				
+				}
+			h1{
+				@include adaptiv-font(90, 40, 126);
+				@include adaptiv-indent(50,32);
+				
+				
+				text-align: center;
+				font-weight: 700;
+				span{
+					background: linear-gradient(180deg, #9453FB 0%, #BD93FF 54.69%, #384DBC 100%);
+					-webkit-background-clip: text;
+  					-webkit-text-fill-color: transparent;
+				}
+			}
+			p{
+				@include adaptiv-font(50, 20, 63);
+				
+				text-align: center;
+
+			}
+		}
+
+		// .message__link
+
+		&__link {
+			text-align: right;
+			padding-right: 19px;
+			
+			@media (max-width:767px) {text-align: center;}
+			a{
+				text-decoration: none;
+				font-size: 18px;
+				line-height: 27px;
+				text-transform: uppercase;
+				color: #414141;
+				position: relative;
+			
+				span{
+					margin: 0 14px;
+					display: inline-block;
+					width: 120px;
+					border-bottom: 1px solid #414141 ;
+				}
+				@media screen and (min-width: 1024px) {
+					&:hover {
+						color: #000; 
+						font-weight: 900;
+						-webkit-transition: all 0.3s ease;;
+						-o-transition: all 0.3s ease;;
+						transition: all 0.3s ease;
+					 
+					   }
+					   &:hover span{
+						 border-bottom: 2px solid #000 ;
+						 -webkit-transition: all 0.3s ease;;
+						 -o-transition: all 0.3s ease;;
+						 transition: all 0.3s ease;
+					   }
+					   
+				}
+			}
+		}
+}
+.pum-theme-228 .pum-content + .pum-close, .pum-theme-simyz .pum-content + .pum-close {
+	@media (max-width:767px){
+		font-size: 16px;
+	}
+}

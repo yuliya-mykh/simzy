@@ -1,0 +1,156 @@
+.form_popup{
+
+input, textarea{
+    border: none;
+    outline: none;
+    background: none;
+    
+    color: #414141;
+    font-weight: 500;
+    max-width: 380px;
+    font-size: 25px;
+    line-height: 130%;
+    padding-bottom: 15px;
+    border-bottom: solid 1.6px #C4C4C4;
+    /*margin-bottom: 85px;*/
+    padding-top: 30px;
+    @media (max-width:767px){
+        font-size: 25px;
+        max-width: 300px;
+        
+            }
+    &::placeholder{
+        font-style: normal;
+        font-weight: 300;
+        color: #C8C6C6;
+            }
+
+    &:focus, &:active{
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: solid 1.6px #C4C4C4;
+
+    }
+
+    
+            
+}
+
+
+
+textarea{
+    height: 85px;
+    resize: inherit;
+    overflow:hidden;
+    font-family: poppins;
+    &:focus, &:active{
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: solid 1.6px #C4C4C4;
+
+    }
+}
+label{
+    font-weight: 300;
+font-size: 18px;
+line-height: 130%;
+color: #C4C4C4;
+
+}
+.wpcf7-submit {
+    padding:5px 15px; 
+    background:none;
+    border:0;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #414141;
+    position: relative;
+    margin-bottom: 5px;
+
+    &:active, &:focus{
+        border-bottom: none;
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+
+            
+                
+            
+
+        @media screen and (min-width: 1024px) {
+            &:hover {
+                color: #000; 
+                font-weight: 900;
+                -webkit-transition: all 0.3s ease;;
+                -o-transition: all 0.3s ease;;
+                transition: all 0.3s ease;
+            
+            }
+        }
+    }
+    .button{
+        position: relative;
+        display: inline-block;
+        min-width: 245px;
+        margin-left: 100px;
+        margin-right: -80px;
+        @media (max-width:767px){
+            margin-left: 0;
+            margin-right: 0;
+                }
+
+        
+
+            @media (min-width:767px){
+        &::after{
+            content: 'send';
+            position: absolute;
+            transform: rotate(25.85deg);
+            background-color: #DA1C1C;
+            text-transform: lowercase;
+            left: 275px;
+            color: #fff;
+            padding-top: 13px;
+            padding-left: 4px;
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            font-weight: 300;
+                font-size: 12px;
+                line-height: 111%;
+                top:40px;
+            right: -10px;
+            transition: all 0.3s ease;
+            }
+        }
+
+
+
+        }
+        
+
+
+        
+    }
+
+
+    .wpcf7-response-output, .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+display: none;
+}
+
+//для запрета изменения цвета фона в Chrome при автозаполнении
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+transition: background-color 5000s ease-in-out 0s;
+}
+

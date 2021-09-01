@@ -1,0 +1,19 @@
+$maxWidth: 1900;
+$minWidth: 320;
+
+@mixin adaptiv-font ($pcSize, $mobSize, $lineHeight) {
+    $lineHeightCalc: $lineHeight/$pcSize;
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - #{$minWidth +px})/ #{$maxWidth}));
+        line-height: $lineHeightCalc;
+      
+        
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+        line-height: $lineHeightCalc;
+    }
+}

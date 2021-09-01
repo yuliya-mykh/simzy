@@ -1,0 +1,87 @@
+.order{
+    background: #ECEAEA;
+    margin-top: 200px;
+    padding: 40px;
+    @media (max-width:767px){
+        margin-top: 70px;
+    }
+
+    .wc-stripe-card-icon{
+        width: 40px;
+    }
+    .payment_method_stripe_googlepay img{
+        width: 40px;
+    }
+    h3 {
+        @include adaptiv-font(70, 35, 105);
+    
+        @include adaptiv-indent(65,24);
+    }
+    input, textarea, select{
+        border: none;
+        outline: none;
+        background: none;
+        
+        color: #414141;
+        font-weight: 500;
+        max-width: 653px;
+        font-size: 20px;
+        line-height: 130%;
+        padding-bottom: 10px;
+        border-bottom: solid 1.6px #C4C4C4;
+        /*margin-bottom: 85px;*/
+        
+        @media (max-width:767px){
+            font-size: 25px;
+            
+            
+                }
+        
+
+        &:focus, &:active{
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: solid 1.6px #C4C4C4;
+
+        }
+
+        
+                
+    }
+
+
+
+
+    label{
+        font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    color: #C4C4C4;
+    padding-top: 17px;
+    @media (max-width:767px){
+        padding-top: 20px;
+    }
+
+    }
+
+    .woocommerce-form-login__rememberme{
+        padding-top: 0;
+    }
+    
+}
+.lost_password a{
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+#billing_last_name_field{
+    @media (max-width:767px){
+        display: none;
+    }
+}
+#billing_first_name_field{
+    @media (max-width:767px){
+        width: 100%;
+    }
+}

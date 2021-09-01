@@ -1,0 +1,182 @@
+.post {
+    padding-top: 252px;
+    color: white;
+    @media (max-width:767px) {
+        padding-top: 88px;
+    }
+
+
+    // .post__title
+
+    &__title {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: minmax(auto);
+
+        @media (max-width:767px) {
+            display: block;
+        }
+    }
+
+    // .post__date
+
+    &__date {
+        font-weight: 300;
+        @include adaptiv-font(35, 20, 52);
+        @include adaptiv-indent(65,24);
+        span{
+            font-family: Ruthie;
+            padding-left: 20px; 
+        }
+        
+    }
+
+    // .post__desk
+
+    &__desk {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: minmax(auto);
+        
+        @media (max-width:767px) {
+            display: block;
+
+        }
+    }
+
+    // .post__img
+
+    &__img {
+        img{width: 100%;}
+        @include adaptiv-indent(65,24);
+        @media (max-width:767px) {
+            margin: 0 -15px;
+
+        }
+    }
+
+    // .post__body
+
+    &__body {
+        @include adaptiv-font(20, 16, 35);
+        @include adaptiv-indent(112,103);
+        padding-left: 40%;
+        @media (max-width:767px) {
+        padding-left: 0;
+        }
+    }
+}
+.caption {
+    @include adaptiv-font(70, 35, 105);
+    grid-column: 1/3;
+    @include adaptiv-indent(65,24);
+    
+    
+}
+.category,.author {
+    @include adaptiv-font(20, 20, 30);
+    color: #828282;
+    @include adaptiv-indent(65,24);
+}
+.category a {
+    text-decoration: none;
+    color: #828282;
+
+}
+
+.morePosts {
+    padding-bottom: 110px;
+    // .morePosts__caption
+
+    &__caption {
+        @include adaptiv-font(150, 70, 225);
+        @include adaptiv-indent(86,47); 
+    }
+
+    // .morePosts__item
+
+    &__item {
+        
+        padding: 28px 0;
+        border-top: 1px #313131 solid;
+        border-bottom: 1px #313131 solid;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: minmax(auto);
+        vertical-align: baseline;
+        &:hover {
+                color: $color_red; 
+                transition: all 0.3s ease;
+                a{
+                    color: $color_red;
+                    transition: all 0.3s ease;
+                    @media screen and (min-width: 1024px) {
+                    &::after{
+                        content: 'view';
+                        position: absolute;
+                        transform: rotate(25.85deg);
+                        background-color: #DA1C1C;
+                        text-transform: lowercase;
+                        color: #fff;
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        width: 39px;
+                        height: 39px;
+                        border-radius: 50%;
+                        font-weight: 300;
+                            font-size: 12px;
+                            line-height: 111%;
+                        right: -60px;
+                        transition: all 0.3s ease;
+                        }
+                    
+                } 
+                }
+            }
+            @media (max-width:767px) {
+                display: block;
+                }
+            
+
+        // .morePosts__item_date
+
+        &_date {
+            @include adaptiv-font(20, 12, 25);
+            @include adaptiv-indent(0,5); 
+            font-family: Ruthie;
+            vertical-align: baseline;
+
+        }
+
+        // .morePosts__item_name
+
+        &_name {
+            font-size: 25px;
+            line-height: 37px;
+            text-transform: uppercase;
+            a{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                vertical-align: baseline;
+                
+            }
+            vertical-align: baseline;
+            
+        }
+
+        // .morePosts__item_cat
+
+        &_cat {
+            justify-self: end;
+            @include adaptiv-font(20, 12, 30);
+            @include adaptiv-indent(0,5); 
+            vertical-align: baseline;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

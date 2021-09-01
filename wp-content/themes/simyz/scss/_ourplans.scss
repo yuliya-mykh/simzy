@@ -1,0 +1,91 @@
+.our {
+
+    // .our_plans
+
+    &_plans {
+        background: $color_bg_light;
+    }
+}
+
+.our_plans {
+
+    // .our_plans__caption
+
+    &__caption {
+        @extend #capt_black;
+        padding: 90px 0;
+        text-align: right;
+
+    }
+
+    // .our_plans__blok
+
+    &__blok {
+        border-top: solid 1px #000;
+        display: grid;
+        grid-template-columns: 0.5fr 4.5fr 7fr;
+        grid-template-rows: minmax(auto);
+        @media (max-width:767px) {
+            grid-template-columns: 2fr 10fr; 
+        }
+
+
+    }
+}
+.blok {
+
+    // .blok_num
+
+    &_num {
+    font-family: Ruthie;
+    font-style: normal;
+    font-weight: normal;
+    @include adaptiv-font(35, 16, 44);
+    
+    padding-top: 30px;
+    @media (max-width:767px) {
+        padding-top: 5px;
+    }
+    
+    }
+
+    // .blok_name
+
+    &_name {
+    @include adaptiv-font(70, 30, 105);
+    font-size: 70px;
+    line-height: 105px;
+    }
+
+    &_desk{
+        @media (max-width:767px) {
+        grid-column: 1/12;
+        grid-row: 2/2;
+        }
+    }
+
+
+}
+.specification {
+    @extend #flex_between;
+    @include adaptiv-font(50, 25, 75);
+    
+    text-transform: capitalize;
+    padding: 20px 0;
+    border-bottom: 1px solid $color_darkgrey;
+
+
+}
+.total {
+    @extend #flex_between;
+    color: #797979;
+    @include adaptiv-font(50, 30, 75);
+    
+    text-transform: capitalize;
+    margin: 18px 0 50px 0;
+
+}
+.order_plan {
+    margin: 50px 0 104px 0;
+    text-align: right;
+}
